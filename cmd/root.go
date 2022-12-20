@@ -25,4 +25,5 @@ func Execute() {
 func init() {
 	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", "", "config file (default is $HOME/.app.yaml)")
 	rootCmd.AddCommand(SubCmd)
+	rootCmd.AddCommand(DbCmd)
 }
